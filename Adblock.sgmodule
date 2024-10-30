@@ -1,7 +1,7 @@
 #!name=墨鱼去广告模块
 #!desc=融合版[由GithubAction自动更新]，包括墨鱼去开屏2.0、喜马拉雅、哔哩哔哩、微博、KEEP、贴吧、知乎、高德地图、小红书、网易云、百度地图、什么值得买、菜鸟、彩云天气、豆瓣网页
 #!author=ddgksf2013
-#!logtime=2024-10-30 17:21:52
+#!logtime=2024-10-30 18:22:31
 #!giturl=https://github.com/ddgksf2013
 #!tgchannels=https://t.me/ddgksf2021
 #!moduleurl=https://github.com/ddgksf2013/Modules/raw/main/Adblock.sgmodule
@@ -15,7 +15,7 @@
 
 [URL Rewrite]
 
-^https?:\/\/2024.10.27/c352/v2.0.540 - reject
+^https?:\/\/2024.10.30/c352/v2.0.541 - reject
 ^https?:\/\/ftapi\.10jqka\.com\.cn\/futgwapi\/api\/om\/v\d\/ad\/common\/transfer - reject
 ^https?:\/\/ad\.mcloud\.139\.com\/advertapi - reject
 ^https?:\/\/smsrebuild1\.mail\.10086\.cn\/together\/s - reject
@@ -89,6 +89,7 @@ https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload|PasMultiNot
 ^https?:\/\/dq\.dxy\.cn\/api\.php\?action=getpostbanners - reject
 ^https?:\/\/emdcadvise\.eastmoney\.com\/infoAdviseService$ - reject
 ^https?:\/\/entree-ws\.igetget\.com\/oms\/front\/start\/push - reject
+^https?:\/\/maicai\.api\.ddxq\.mobi\/advert\/startUpScreen - reject
 ^https?:\/\/dj\.palmestore\.com\/zybk\/api\/ad - reject
 ^https?:\/\/saad\.ms\.zhangyue\.net\/ad\/ - reject
 ^https?:\/\/capis.*didapinche\.com\/ad\/cx\/startup - reject
