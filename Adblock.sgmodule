@@ -1,7 +1,7 @@
 #!name=墨鱼去广告模块
 #!desc=融合版[由GithubAction自动更新]，包括墨鱼去开屏2.0、喜马拉雅、哔哩哔哩、微博、KEEP、贴吧、知乎、高德地图、小红书、网易云、百度地图、什么值得买、菜鸟、彩云天气、豆瓣网页
 #!author=ddgksf2013
-#!logtime=2024-11-06 19:16:50
+#!logtime=2024-11-06 20:39:23
 #!giturl=https://github.com/ddgksf2013
 #!tgchannels=https://t.me/ddgksf2021
 #!moduleurl=https://github.com/ddgksf2013/Modules/raw/main/Adblock.sgmodule
@@ -486,6 +486,7 @@ https?:\/\/m\.sd\.10086\.cn\/zapi\/app_common\/homeWelcome\/welcome.do - reject
 ^https?:\/\/.*\.amap\.com\/ws\/shield\/scene\/recommend - reject
 ^https?:\/\/.*\.amap\.com\/uploadimg\/\w+\.gif - reject
 ^https?:\/\/.*\.amap\.com\/ws\/valueadded\/weather - reject
+^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/system_service\/splash - reject
 ^https?:\/\/www\.xiaohongshu\.com\/api\/sns\/v\d\/(tag\/)?ads - reject
 ^https?:\/\/referee\.xiaohongshu\.com\/v\d\/stateReport - reject
 ^https?:\/\/pages\.xiaohongshu\.com\/data\/native\/matrix_switches - reject
@@ -625,6 +626,8 @@ amap.js =type=http-response, pattern=^https?:\/\/.*\.amap\.com\/ws\/valueadded\/
 amap.js =type=http-response, pattern=^https?:\/\/.*\.amap\.com\/ws\/msgbox\/pull, script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js, requires-body=true, max-size=-1, timeout=60
 amap.js =type=http-response, pattern=^https?:\/\/.*\.amap\.com\/ws\/shield\/dsp\/profile\/index\/nodefaas, script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js, requires-body=true, max-size=-1, timeout=60
 amap.js =type=http-response, pattern=^https?:\/\/.*\.amap\.com\/ws\/shield\/search\/new_hotword, script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js, requires-body=true, max-size=-1, timeout=60
+redbook_json.js =type=http-response, pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/note\/comment\/list, script-path=https://github.com/ddgksf2013/Scripts/raw/master/redbook_json.js, requires-body=true, max-size=-1, timeout=60
+redbook_json.js =type=http-response, pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/note\/live_photo\/save, script-path=https://github.com/ddgksf2013/Scripts/raw/master/redbook_json.js, requires-body=true, max-size=-1, timeout=60
 redbook_json.js =type=http-response, pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d+\/search\/notes\?, script-path=https://github.com/ddgksf2013/Scripts/raw/master/redbook_json.js, requires-body=true, max-size=-1, timeout=60
 redbook_json.js =type=http-response, pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/note\/widgets, script-path=https://github.com/ddgksf2013/Scripts/raw/master/redbook_json.js, requires-body=true, max-size=-1, timeout=60
 redbook_json.js =type=http-response, pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/note\/redtube\?, script-path=https://github.com/ddgksf2013/Scripts/raw/master/redbook_json.js, requires-body=true, max-size=-1, timeout=60
