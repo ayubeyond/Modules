@@ -1,7 +1,7 @@
 #!name=墨鱼去广告模块
 #!desc=融合版[由GithubAction自动更新]，包括墨鱼去开屏2.0、喜马拉雅、哔哩哔哩、微博、KEEP、贴吧、知乎、高德地图、小红书、网易云、百度地图、什么值得买、菜鸟、彩云天气、豆瓣网页
 #!author=ddgksf2013
-#!logtime=2024-11-08 19:16:14
+#!logtime=2024-11-08 20:38:35
 #!giturl=https://github.com/ddgksf2013
 #!tgchannels=https://t.me/ddgksf2021
 #!moduleurl=https://github.com/ddgksf2013/Modules/raw/main/Adblock.sgmodule
@@ -15,7 +15,7 @@
 
 [URL Rewrite]
 
-^https?:\/\/2024.11.06/c353/v2.0.546 - reject
+^https?:\/\/2024.11.08/c353/v2.0.547 - reject
 ^https?:\/\/ftapi\.10jqka\.com\.cn\/futgwapi\/api\/om\/v\d\/ad\/common\/transfer - reject
 ^https?:\/\/ad\.mcloud\.139\.com\/advertapi - reject
 ^https?:\/\/smsrebuild1\.mail\.10086\.cn\/together\/s - reject
@@ -30,6 +30,7 @@
 ^https?:\/\/gw.aihuishou.com\/app-portal\/home\/getadvertisement - reject
 ^https?:\/\/sso.ifanr.com\/jiong\/IOS\/appso\/splash\/ - reject
 ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alibaba\.advertisementservice\.getadv\/ - reject
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alibaba\.cbu\.app\.homepage\.startup - reject
 ^https?:\/\/.*aastocks\.com\/ad\/ - reject
 ^https?:\/\/www\.ahzs10000\.com\/palmhall\/client\/base\/newVerson_getStartUp\.action - reject
 ^https?:\/\/mime\.baidu\.com\/v\d\/IosStart\/getStartInfo - reject
