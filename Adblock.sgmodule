@@ -1,7 +1,7 @@
 #!name=墨鱼去广告模块
 #!desc=融合版[由GithubAction自动更新]，包括墨鱼去开屏2.0、喜马拉雅、哔哩哔哩、微博、KEEP、贴吧、知乎、高德地图、小红书、网易云、百度地图、什么值得买、菜鸟、彩云天气、豆瓣网页
 #!author=ddgksf2013
-#!logtime=2024-12-04 16:29:24
+#!logtime=2024-12-04 17:24:08
 #!giturl=https://github.com/ddgksf2013
 #!tgchannels=https://t.me/ddgksf2021
 #!moduleurl=https://github.com/ddgksf2013/Modules/raw/main/Adblock.sgmodule
@@ -15,7 +15,7 @@
 
 [URL Rewrite]
 
-^https?:\/\/2024.12.04/c358/v2.0.555 - reject
+^https?:\/\/2024.12.04/c358/v2.0.556 - reject
 ^https?:\/\/ftapi\.10jqka\.com\.cn\/futgwapi\/api\/om\/v\d\/ad\/common\/transfer - reject
 ^https?:\/\/ad\.mcloud\.139\.com\/advertapi - reject
 ^https?:\/\/smsrebuild1\.mail\.10086\.cn\/together\/s - reject
@@ -67,7 +67,7 @@
 ^https?:\/\/iyes\.youku\.com\/uts/v\d\/start - reject
 ^https?:\/\/app-gw\.csdn\.net\/silkroad-api\/api\/v\d\/assemble\/list\/pub\/channel\/app_open_screen_ad - reject
 ^https?:\/\/api3\.cls\.cn\/v1\/boot\/ad - reject
-^https?:\/\/pinggai*.caixin\.com\/s\?z=caixin - reject
+^https?:\/\/pinggai.*caixin\.com\/s\?z=caixin - reject
 ^https?:\/\/api\.dangdang\.com\/mapi\d\/mobile\/init - reject
 ^https?:\/\/sdk\.alibaba\.com\.ailbaba\.me\/.*?\/v\d\/(version|top_notice\?|advert\?position=[^2]+) - reject
 ^https?:\/\/api\.douban\.com\/v2\/app_ads\/splash - reject
