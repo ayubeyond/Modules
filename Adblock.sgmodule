@@ -1,7 +1,7 @@
 #!name=墨鱼去广告模块
 #!desc=融合版[由GithubAction自动更新]，包括墨鱼去开屏2.0、喜马拉雅、哔哩哔哩、微博、KEEP、贴吧、知乎、高德地图、小红书、网易云、百度地图、什么值得买、菜鸟、彩云天气、豆瓣网页
 #!author=ddgksf2013
-#!logtime=2025-01-26 19:14:13
+#!logtime=2025-01-26 20:34:44
 #!giturl=https://github.com/ddgksf2013
 #!tgchannels=https://t.me/ddgksf2021
 #!moduleurl=https://github.com/ddgksf2013/Modules/raw/main/Adblock.sgmodule
@@ -450,7 +450,8 @@ https?:\/\/m\.sd\.10086\.cn\/zapi\/app_common\/homeWelcome\/welcome.do - reject
 ^https://app.bilibili.com/x/v2/splash/show - reject
 ^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/(Flash|ListFlash|GetActivityTab) - reject
 ^https?:\/\/(app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.app\.interface\.v1\.Search\/Default - reject
-^https?:\/\/api\.weibo\.cn\/!\/was\/finder\/searchbarchange - reject
+^https?:\/\/api\.weibo\.cn\/.*\/media_homelist - reject
+^https?:\/\/api\.weibo\.cn\/.*finder\/searchbarchange - reject
 ^https?:\/\/api\.weibo\.cn\/\d\/ad\/preload - reject
 ^https?:\/\/api\.weibo\.cn\/\d\/cardlist\?v_f=.*Weibo_intl - reject
 ^https?:\/\/api\.weibo\.cn\/\d\/profile\/recommend_popuser - reject
