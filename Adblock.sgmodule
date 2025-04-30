@@ -1,7 +1,7 @@
 #!name=墨鱼去广告模块
 #!desc=融合版[由GithubAction自动更新]，包括墨鱼去开屏2.0、喜马拉雅、哔哩哔哩、微博、KEEP、贴吧、知乎、高德地图、小红书、网易云、百度地图、什么值得买、菜鸟、彩云天气、豆瓣网页
 #!author=ddgksf2013
-#!logtime=2025-04-30 11:07:49
+#!logtime=2025-04-30 12:26:30
 #!giturl=https://github.com/ddgksf2013
 #!tgchannels=https://t.me/ddgksf2021
 #!moduleurl=https://github.com/ddgksf2013/Modules/raw/main/Adblock.sgmodule
@@ -175,6 +175,7 @@ caiyun_json.js =type=http-response, pattern=^https?:\/\/starplucker\.cyapi\.cn\/
 caiyun_json.js =type=http-response, pattern=^https?:\/\/starplucker\.cyapi\.cn\/v\d/operation/banners, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/caiyun_json.js, requires-body=true, max-size=-1, timeout=60
 caiyun_json.js =type=http-response, pattern=^https?:\/\/starplucker\.cyapi\.cn\/v\d/operation/features, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/caiyun_json.js, requires-body=true, max-size=-1, timeout=60
 caiyun_json.js =type=http-response, pattern=^https?:\/\/starplucker\.cyapi\.cn\/v\d/campaigns, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/caiyun_json.js, requires-body=true, max-size=-1, timeout=60
+douban.js =type=http-response, pattern=^https?:\/\/m\.douban\.com\/(home_guide|movie|tv|book|group|music), script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/douban.js, requires-body=true, max-size=-1, timeout=60
 qidian.js =type=http-response, pattern=^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/(v4\/client\/getsplashscreen|v2\/(deeplink\/geturl|dailyrecommend\/getdailyrecommend)|v1\/(client\/getconf$|bookshelf\/getHoverAdv|adv\/getadvlistbatch\?positions=iOS_tab)), script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/qidian.js, requires-body=true, max-size=-1, timeout=60
 suishouji.js =type=http-response, pattern=https://userapi.feidee.net/v1/profile/basic_info, script-path=https://raw.githubusercontent.com/ddgksf2013/MoYu/refs/heads/master/suishouji.js, requires-body=true, max-size=-1, timeout=60
 suishouji.js =type=http-response, pattern=https://yun.feidee.net/cab-vip-ws/terminal/v1/vip-users/show-info, script-path=https://raw.githubusercontent.com/ddgksf2013/MoYu/refs/heads/master/suishouji.js, requires-body=true, max-size=-1, timeout=60
@@ -183,4 +184,4 @@ qq-news.js =type=http-response, pattern=^https:\/\/(news\.ssp\.qq\.com\/app|r\.i
 
 [MITM]
 
-hostname = %APPEND% *.xima*.*, *.xmcdn.*,api.weibo.*, *.api.weibo.*, mapi.weibo.*, *.uve.weibo.com, new.vip.weibo.cn, boot.biz.weibo.com,tiebac.baidu.com,118.89.204.198,103.41.167.237,2402:4e00:1200:ed00:0:9089:6dac:96b6,www.zhihu.com,api.zhihu.com,zhuanlan.zhihu.com,appcloud2.zhihu.com,m-cloud.zhihu.com,103.41.167.236,103.41.167.234,103.41.167.235,103.41.167.226,*.amap.com,app-api.smzdm.com, *.zdmimg.com, homepage-api.smzdm.com, haojia-api.smzdm.com, haojia.m.smzdm.com, baike-api.smzdm.com, s-api.smzdm.com, zhiyou.m.smzdm.com,*.pipix.com,wrapper.cyapi.cn, api.caiyunapp.com, starplucker.cyapi.cn, ad.cyapi.cn,magev6.if.qidian.com,*.feidee.*, *.ssjlicai.*,news.ssp.qq.com, r.inews.qq.com
+hostname = %APPEND% *.xima*.*, *.xmcdn.*,api.weibo.*, *.api.weibo.*, mapi.weibo.*, *.uve.weibo.com, new.vip.weibo.cn, boot.biz.weibo.com,tiebac.baidu.com,118.89.204.198,103.41.167.237,2402:4e00:1200:ed00:0:9089:6dac:96b6,www.zhihu.com,api.zhihu.com,zhuanlan.zhihu.com,appcloud2.zhihu.com,m-cloud.zhihu.com,103.41.167.236,103.41.167.234,103.41.167.235,103.41.167.226,*.amap.com,app-api.smzdm.com, *.zdmimg.com, homepage-api.smzdm.com, haojia-api.smzdm.com, haojia.m.smzdm.com, baike-api.smzdm.com, s-api.smzdm.com, zhiyou.m.smzdm.com,*.pipix.com,wrapper.cyapi.cn, api.caiyunapp.com, starplucker.cyapi.cn, ad.cyapi.cn,m.douban.com,magev6.if.qidian.com,*.feidee.*, *.ssjlicai.*,news.ssp.qq.com, r.inews.qq.com
