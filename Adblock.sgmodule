@@ -1,7 +1,7 @@
 #!name=墨鱼去广告模块
 #!desc=融合版[由GithubAction自动更新]，包括墨鱼去开屏2.0、喜马拉雅、哔哩哔哩、微博、KEEP、贴吧、知乎、高德地图、小红书、网易云、百度地图、什么值得买、菜鸟、彩云天气、豆瓣网页
 #!author=ddgksf2013
-#!logtime=2025-09-01 17:26:55
+#!logtime=2025-09-01 18:25:25
 #!giturl=https://github.com/ddgksf2013
 #!tgchannels=https://t.me/ddgksf2021
 #!moduleurl=https://github.com/ddgksf2013/Modules/raw/main/Adblock.sgmodule
@@ -34,22 +34,6 @@
 ^https?:\/\/.*\.xima.*\.com\/(hub)?guideWord - reject
 ^https?:\/\/.*\.xima.*\.com\/api\/v\d\/adRealTime - reject
 ^https?:\/\/.*\.xima.*\.com\/ting\/(loading|feed|home)? - reject
-^https?:\/\/api\.weibo\.cn\/\d\/statuses\/container_positive - reject
-^https?:\/\/api\.weibo\.cn\/\d\/push\/info - reject
-^https?:\/\/api\.weibo\.cn\/.*account\/recommend_interesttags - reject
-^https?:\/\/api\.weibo\.cn\/.*\/media_homelist - reject
-^https?:\/\/api\.weibo\.cn\/.*finder\/searchbarchange - reject
-^https?:\/\/api\.weibo\.cn\/\d\/ad\/preload - reject
-^https?:\/\/api\.weibo\.cn\/\d\/profile\/recommend_popuser - reject
-^https?:\/\/boot.*weibo\.com\/v\d\/ad\/realtime - reject
-^https?:\/\/api\.weibo\.cn\/.*discovery_home_bottom_getdotinfo - reject
-^https?:\/\/m?api\.weibo\.c(n|om)\/\d/push/daily - reject
-^https?:\/\/(preload-click|preload-impression)\.uve\.weibo\.com\/(interface\/wbpullad\/wbpullad_click\.php|wbapplua\/get_wbpullad_log\.lua) - reject
-^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/sdkconfig\.php - reject
-^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/hot\/hours_spotlight - reject
-^https?:\/\/api\.weibo\.cn\/\d\/cardlist\?v_f=.*Weibo_intl - reject
-^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php\?a=hot_search_users - reject
-^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/ad\/weibointl\? - reject
 ^https?:\/\/118\.89\.204\.198 - reject
 ^https?:\/\/103\.41\.167\.237 - reject
 ^https?:\/\/2402:4e00:1200:ed00:0:9089:6dac:96b6 - reject
@@ -68,12 +52,6 @@
 ^https?:\/\/api\.zhihu\.com\/api\/v4\/ecom_data\/config - reject
 ^https?:\/\/api\.zhihu\.com\/feed\/render\/revisit\/tag_config - reject
 ^https?:\/\/api\.zhihu\.com\/content-distribution-core\/sections\/ - reject
-^https?:\/\/.*\.amap\.com\/ws\/faas\/amap-navigation\/card-service-route-plan\? - reject
-^https?:\/\/.*\.amap\.com\/ws\/boss\/order_web\/\w{8}_information - reject
-^https?:\/\/.*\.amap\.com\/ws\/asa\/ads_attribution - reject
-^https?:\/\/.*\.amap\.com\/ws\/shield\/scene\/recommend - reject
-^https?:\/\/.*\.amap\.com\/uploadimg\/\w+\.gif - reject
-^https?:\/\/.*\.amap\.com\/ws\/valueadded\/weather - reject
 ^https?:\/\/haojia\.m\.smzdm\.com\/detail_modul\/other_modul - reject
 ^https?:\/\/haojia\.m\.smzdm\.com\/detail_modul\/user_related_modul - reject
 ^https?:\/\/haojia\.m\.smzdm\.com\/detail_modul\/wiki_related_modul - reject
@@ -98,30 +76,6 @@ ximalaya_json.js =type=http-response, pattern=^https?:\/\/.*\.xima.*\.com\/focus
 ximalaya_json.js =type=http-response, pattern=^https?:\/\/.*\.xima.*\.com\/discovery-feed\/v\d\/mix, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/ximalaya_json.js, requires-body=true, max-size=-1, timeout=60
 ximalaya_json.js =type=http-response, pattern=^https?:\/\/.*\.xima.*\.com\/discovery-category\/v\d/category, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/ximalaya_json.js, requires-body=true, max-size=-1, timeout=60
 ximalaya_json.js =type=http-response, pattern=^https?:\/\/.*\.xima.*\.com\/mobile-user\/v\d\/homePage, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/ximalaya_json.js, requires-body=true, max-size=-1, timeout=60
-weibo_json.js =type=http-response, pattern=^https?:\/\/api\.weibo\.cn\/\d\/groups\/allgroups\/v\d, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/weibo_json.js, requires-body=true, max-size=-1, timeout=60
-weibo_json.js =type=http-response, pattern=^https?:\/\/boot.*weibo\.com\/v\d\/ad\/preload, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/weibo_json.js, requires-body=true, max-size=-1, timeout=60
-weibo_json.js =type=http-response, pattern=^https?:\/\/api\.weibo\.cn\/\d\/\w{5}\/(statuses_unread_hot_timeline|timeline), script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/weibo_json.js, requires-body=true, max-size=-1, timeout=60
-weibo_json.js =type=http-response, pattern=^https?:\/\/api\.weibo\.cn\/\d\/video\/tiny_stream_mid_detail, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/weibo_json.js, requires-body=true, max-size=-1, timeout=60
-weibo_json.js =type=http-response, pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/\w{5}\/cardlist, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/weibo_json.js, requires-body=true, max-size=-1, timeout=60
-weibo_json.js =type=http-response, pattern=^https://api.weibo.cn/2/!/client/light_skin, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/weibo_json.js, requires-body=true, max-size=-1, timeout=60
-weibo_json.js =type=http-response, pattern=^https://new.vip.weibo.cn/littleskin/preview, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/weibo_json.js, requires-body=true, max-size=-1, timeout=60
-weibo_json.js =type=http-response, pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/(searchall|page\?|0flowpage), script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/weibo_json.js, requires-body=true, max-size=-1, timeout=60
-weibo_json.js =type=http-response, pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/statuses/(unread_)?friends(/|_)timeline, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/weibo_json.js, requires-body=true, max-size=-1, timeout=60
-weibo_json.js =type=http-response, pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/groups/timeline, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/weibo_json.js, requires-body=true, max-size=-1, timeout=60
-weibo_json.js =type=http-response, pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/statuses/(container_timeline|unread_hot_timeline|extend|video_mixtimeline|unread_topic_timeline), script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/weibo_json.js, requires-body=true, max-size=-1, timeout=60
-weibo_json.js =type=http-response, pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/profile/(me|container_timeline), script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/weibo_json.js, requires-body=true, max-size=-1, timeout=60
-weibo_json.js =type=http-response, pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/video/(community_tab|remind_info|tiny_stream_video_list), script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/weibo_json.js, requires-body=true, max-size=-1, timeout=60
-weibo_json.js =type=http-response, pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/search/(finder|container_timeline|container_discover), script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/weibo_json.js, requires-body=true, max-size=-1, timeout=60
-weibo_json.js =type=http-response, pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/(checkin/show|\!/live/media_homelist|comments/build_comments|container/get_item), script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/weibo_json.js, requires-body=true, max-size=-1, timeout=60
-weibo_json.js =type=http-response, pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/cardlist, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/weibo_json.js, requires-body=true, max-size=-1, timeout=60
-weibo_json.js =type=http-response, pattern=^https?:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?a=open_app, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/weibo_json.js, requires-body=true, max-size=-1, timeout=60
-weibo_search_info.json =type=http-response, pattern=^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*a=get_searching_info, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/weibo_search_info.json, requires-body=true, max-size=-1, timeout=60
-weibo_search_topic.json =type=http-response, pattern=^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*feed&a=search_topic, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/weibo_search_topic.json, requires-body=true, max-size=-1, timeout=60
-weibo_json.js =type=http-response, pattern=^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*get_coopen_ads, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/weibo_json.js, requires-body=true, max-size=-1, timeout=60
-weibo_json.js =type=http-response, pattern=^https?://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua), script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/weibo_json.js, requires-body=true, max-size=-1, timeout=60
-weibo_json.js =type=http-response, pattern=^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*a=trends, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/weibo_json.js, requires-body=true, max-size=-1, timeout=60
-weibo_json.js =type=http-response, pattern=^https?:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?a=user_center, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/weibo_json.js, requires-body=true, max-size=-1, timeout=60
-weibo_json.js =type=http-response, pattern=^https?:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?a=search_topic, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/weibo_json.js, requires-body=true, max-size=-1, timeout=60
 tieba-json.js =type=http-response, pattern=^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/(c\/(s\/sync|f\/(ad\/getSplashAd|frs\/(page|threadlist|generalTabList)|pb\/(pic)?page|excellent\/personalized))$|tiebaads\/commonbatch\?), script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-json.js, requires-body=true, max-size=-1, timeout=60
 tieba-proto.js =type=http-response, pattern=^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)\?cmd, script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-proto.js, requires-body=true, max-size=-1, timeout=60
 zheye.min.js =type=http-response, pattern=^https?:\/\/api\.zhihu\.com\/people\/, script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js, requires-body=true, max-size=-1, timeout=60
@@ -140,16 +94,6 @@ zheye.min.js =type=http-response, pattern=^https?:\/\/api\.zhihu\.com\/search\/p
 zheye.min.js =type=http-response, pattern=^https?:\/\/api\.zhihu\.com\/search\/recommend_query, script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js, requires-body=true, max-size=-1, timeout=60
 zheye.min.js =type=http-response, pattern=^https:\/\/api\.zhihu\.com\/settings\/blocked_users, script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js, requires-body=true, max-size=-1, timeout=60
 zheye.min.js =type=http-response, pattern=^https?:\/\/www\.zhihu\.com\/api\/v4\/comment_v5\/answers\/\d+\/abstract_comment\?, script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js, requires-body=true, max-size=-1, timeout=60
-amdc.js =type=http-response, pattern=^http:\/\/amdc\.m\.taobao\.com, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/amdc.js, requires-body=true, max-size=-1, timeout=60
-amap.js =type=http-response, pattern=^https?:\/\/.*\.amap\.com\/ws\/message\/notice\/list, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/amap.js, requires-body=true, max-size=-1, timeout=60
-amap.js =type=http-response, pattern=^https?:\/\/.*\.amap\.com\/ws\/shield\/frogserver\/aocs\/updatable, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/amap.js, requires-body=true, max-size=-1, timeout=60
-amap.js =type=http-response, pattern=^https?:\/\/.*\.amap\.com\/ws\/shield\/search\/nearbyrec_smart, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/amap.js, requires-body=true, max-size=-1, timeout=60
-amap.js =type=http-response, pattern=^https?:\/\/.*\.amap\.com\/ws\/promotion-web\/resource, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/amap.js, requires-body=true, max-size=-1, timeout=60
-amap.js =type=http-response, pattern=^https?:\/\/.*\.amap\.com\/ws\/faas\/amap-navigation\/main-page, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/amap.js, requires-body=true, max-size=-1, timeout=60
-amap.js =type=http-response, pattern=^https?:\/\/.*\.amap\.com\/ws\/valueadded\/alimama\/splash_screen, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/amap.js, requires-body=true, max-size=-1, timeout=60
-amap.js =type=http-response, pattern=^https?:\/\/.*\.amap\.com\/ws\/msgbox\/pull, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/amap.js, requires-body=true, max-size=-1, timeout=60
-amap.js =type=http-response, pattern=^https?:\/\/.*\.amap\.com\/ws\/shield\/dsp\/profile\/index\/nodefaas, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/amap.js, requires-body=true, max-size=-1, timeout=60
-amap.js =type=http-response, pattern=^https?:\/\/.*\.amap\.com\/ws\/shield\/search\/new_hotword, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/amap.js, requires-body=true, max-size=-1, timeout=60
 smzdm_json.js =type=http-response, pattern=^https?:\/\/s-api.smzdm\.com\/sou\/search_default_keyword, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/smzdm_json.js, requires-body=true, max-size=-1, timeout=60
 smzdm_json.js =type=http-response, pattern=^https?:\/\/app-api\.smzdm\.com\/util\/loading, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/smzdm_json.js, requires-body=true, max-size=-1, timeout=60
 smzdm_json.js =type=http-response, pattern=^https?:\/\/.*zdmimg\.com\/cpm\/api\/v\d\/advert_distribution\/get_all_advertise, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/smzdm_json.js, requires-body=true, max-size=-1, timeout=60
@@ -181,4 +125,4 @@ qq-news.js =type=http-response, pattern=^https:\/\/(news\.ssp\.qq\.com\/app|r\.i
 
 [MITM]
 
-hostname = %APPEND% *.xima*.*, *.xmcdn.*,api.weibo.*, *.api.weibo.*, mapi.weibo.*, *.uve.weibo.com, new.vip.weibo.cn, boot.biz.weibo.com,tiebac.baidu.com,118.89.204.198,103.41.167.237,2402:4e00:1200:ed00:0:9089:6dac:96b6,www.zhihu.com,api.zhihu.com,zhuanlan.zhihu.com,m-cloud.zhihu.com,page-info.zhihu.com,web-render.zhihu.com,*.amap.com,app-api.smzdm.com, *.zdmimg.com, homepage-api.smzdm.com, haojia-api.smzdm.com, haojia.m.smzdm.com, baike-api.smzdm.com, s-api.smzdm.com, zhiyou.m.smzdm.com,*.pipix.com,wrapper.cyapi.cn, api.caiyunapp.com, starplucker.cyapi.cn, ad.cyapi.cn,m.douban.com,magev6.if.qidian.com,*.feidee.*, *.ssjlicai.*,news.ssp.qq.com, r.inews.qq.com
+hostname = %APPEND% *.xima*.*, *.xmcdn.*,tiebac.baidu.com,118.89.204.198,103.41.167.237,2402:4e00:1200:ed00:0:9089:6dac:96b6,www.zhihu.com,api.zhihu.com,zhuanlan.zhihu.com,m-cloud.zhihu.com,page-info.zhihu.com,web-render.zhihu.com,app-api.smzdm.com, *.zdmimg.com, homepage-api.smzdm.com, haojia-api.smzdm.com, haojia.m.smzdm.com, baike-api.smzdm.com, s-api.smzdm.com, zhiyou.m.smzdm.com,*.pipix.com,wrapper.cyapi.cn, api.caiyunapp.com, starplucker.cyapi.cn, ad.cyapi.cn,m.douban.com,magev6.if.qidian.com,*.feidee.*, *.ssjlicai.*,news.ssp.qq.com, r.inews.qq.com
